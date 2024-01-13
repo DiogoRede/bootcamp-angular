@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de noticias</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/card.css">
+
+    <!-- Components -->
+    <script src="src/components/CardNews.js" defer></script>
+    <!-- <script src="src/components/TituloDinamico.js" defer></script> -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+
+        <card-news 
+            autor="Diogo R"
+            titulo="Web components no front :O"
+                titulo-link="#"
+            content="Sim, web components é muito importante para o desenvolvimento do front-end :D."
+            imagem-src="./assets/web_components.png"
+            >
+        </card-news>
+
+        <card-news 
+            autor="Diogo R"
+            titulo="Reutilização é muito aprovado por desenvolvedores"
+                titulo-link="#"
+            content="Desenvolvedores pretendem sempre a reutilizar partes de codigos para agilizar os projetos."
+            >
+        </card-news>
+
+    </div>
+
+
+    <!-- 
+
+        <titulo-dinamico titulo="Melhores noticias"></titulo-dinamico>
+        <titulo-dinamico titulo="Noticias diarias"></titulo-dinamico>
+
+    -->
+</body>
+</html>
