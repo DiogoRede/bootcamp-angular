@@ -1,0 +1,37 @@
+<div class="container" [ngSwitch]="menuType">
+
+    <div *ngSwitchDefault>
+        <ul>
+            <li>Home</li>
+        </ul>
+    </div>
+
+    <div *ngSwitchCase="'user'">
+        <ul>
+            <li>Home</li>
+            <li>Meu Perfil</li>
+            <li>Sair</li>
+        </ul>
+    </div>
+
+    <div *ngSwitchCase="'admin'">
+        <ul>
+            <li>Home</li>
+            <li>Meu Perfil</li>
+            <li>Estatisticas</li>
+            <li>Sair</li>
+        </ul>
+    </div>
+
+</div>
+
+<p *ngIf="true">ngIf=True</p>
+
+<div>
+    <button (click)="adicionar()">Adicionar</button>
+    <ul>
+        <li *ngFor="let p of produtos; let i = index" (click)="remover(i)">{{ i }} - {{ p }}</li>
+    </ul>
+</div>
+
+<p *ngIf="false">ngIf=False</p>

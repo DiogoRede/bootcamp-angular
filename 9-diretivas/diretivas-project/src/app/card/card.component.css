@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: crimson;
+}
+
+.container div ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.container div ul li{
+    list-style: none;
+    padding: 1rem;
+    font-size: 2rem;
+}
