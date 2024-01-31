@@ -5,10 +5,6 @@ const redirecionar = document.getElementById('redirecionar');
 let limit = 8;
 let offset = 0;
 
-redirecionar.addEventListener('click', () => {
-    window.location.href = `./pokemon.html?id=${1}`;
-})
-
 function loadPokemon(offset = 0, limit = 5){
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
         const newHtml = pokemons.map((pokemon) => 

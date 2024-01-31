@@ -9,6 +9,10 @@
     padding: 1rem;
 }
 
+.pagination button{
+    cursor: pointer;
+}
+
 .text-center {
     text-align: center;
 }
